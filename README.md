@@ -3,31 +3,6 @@
   </p>
 </p>
 
-
-
-<details open="open">
-  <summary>Tabla de contenido</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">Sobre el proyecto</a>
-      <ul>
-        <li><a href="#built-with">Construido con</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Empezando</a>
-      <ul>
-        <li><a href="#installation">Instalación</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Uso</a></li>
-    <li><a href="#contact">Contacto</a></li>
-    <li><a href="#acknowledgements">Agradecimientos</a></li>
-  </ol>
-</details>
-
-
-
 ## Sobre el proyecto
 
 API REST dedicada a cualquier comercio. A través de un CRUD te encontrarás con herramientas para la gestión de productos y ordenes realizadas. En las próximas versiones se agregaran funciones como añadir imagen al producto, generar archivo PDF, entre otras cosas.
@@ -92,64 +67,12 @@ Petición de tipo POST a (http://localhost:3900/users/login)
 }
 ```
 Respuesta:
-```
-```
-## Crear producto
-Petición de tipo POST a (http://localhost:3900/products)
 ```sh
 {
-    "name": "Producto ejemplo",
-    "price": 300
+ "JWT": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZmFiNGY3OWNjNTdiNDIzOTAyZGYzNjAiLCJub21icmUiOiJmcmFuY28iLCJlbWFpbCI6ImFkbWluMTIxNUBnbWFpbG8uY29tIiwicm9sZSI6InZldGVyaW5hcmlhIiwiaWF0IjoxNjA4NjEwODY5fQ.E88Xbxwhf8AslK2F74OiUXERK8Mep00Zob6eaKz5JQw"
 }
 ```
-Respuesta:
-```
-```
-## Modificar producto
-Petición de tipo PATCH a (http://localhost:3900/products/idDelProducto)
-``` sh
-[
-    {"propName": "name", "value": "Nuevo nombre del producto"}
-]
-```
-Respuesta:
-```
-```
-## Obtener productos
-Petición de tipo GET a (http://localhost:3900/products)
-Respuesta que devolverá todos los productos:
-```
-```
-Para obtener un producto especifico realizar una petición de tipo GET a (http://localhost:3900/products/idDelProducto)
-Respuesta:
-```
-```
-## Eliminar producto
-Petición de tipo DELETE a (http://localhost:3900/products/idDelProducto)
-Respuesta:
-```
-```
-## Realizar una orden 📃
-Petición de tipo POST a (http://localhost:3900/orders) indicando el Id del producto que quiere llevar y su respectiva cantidad.
-```sh
-{
-    "productId": "456IdDelProducto123",
-    "quantity": 2
-}
-```
-## Listar todas las ordenes
-Petición de tipo GET a (http://localhost:3900/orders)
-```
-```
-## Mostrar detalles de una orden especifica
-Petición GET a (http://localhost:3900/orders/idDeLaOrden)
-```
-```
-## Eliminar una orden
-Petición DELETE a (http://localhost:3900/orders/idDeLaOrden)
-Respuesta:
-```
-```
+*Una vez realizado el registro, el login y haber obtenido el JSON Web Token podemos proceder a acceder a las demas rutas y hacer peticiones.*
 
 
 ## Contacto
