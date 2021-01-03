@@ -55,7 +55,10 @@ Petición de tipo POST a (http://localhost:3900/users/signup)
 }
 ```
 Respuesta:
-```
+```sh
+{
+message: "Usuario creado."
+}
 ```
 
 ## Login y adquisición de JWT
